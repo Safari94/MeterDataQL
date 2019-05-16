@@ -1,0 +1,16 @@
+schema {
+    query: Query
+}
+
+type Query{
+    allData: [MeterData]
+    byreadUnit(dRegisterRead: String) : [MeterData]
+}
+
+type MeterData {
+ accessCode: String
+  zTsRead: String
+  dRegisterRead: String
+  mRead: String
+  dReadUnit: String
+}
